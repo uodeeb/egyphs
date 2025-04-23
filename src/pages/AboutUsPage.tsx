@@ -9,11 +9,11 @@ const AboutUsPage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-center bg-cover opacity-20"
           style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/3254729/pexels-photo-3254729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy')" 
+            backgroundImage: "url('/images/temple-of-luxor.jpg')" 
           }}
         ></div>
         <div className="relative z-10 container-custom py-20 text-center">
-          <h1 className="mb-4">About Pyramid Perspective</h1>
+          <h1 className="mb-4">About Egyphs</h1>
           <p className="text-egyptian-sand-200 text-lg max-w-2xl mx-auto">
             Learn about our mission to celebrate and share the rich cultural heritage of ancient Egypt.
           </p>
@@ -27,7 +27,7 @@ const AboutUsPage: React.FC = () => {
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold text-egyptian-blue-900 mb-6">Our Story</h2>
               <p className="text-egyptian-blue-700 mb-4">
-                Pyramid Perspective was founded in 2022 by a team of historians, artists, and educators who share a passion for ancient Egyptian history and culture. Our journey began with a simple mission: to make the fascinating world of ancient Egypt accessible and engaging for everyone.
+                Egyphs was founded in 2022 by a team of historians, artists, and educators who share a passion for ancient Egyptian history and culture. Our journey began with a simple mission: to make the fascinating world of ancient Egypt accessible and engaging for everyone.
               </p>
               <p className="text-egyptian-blue-700 mb-4">
                 We believe that learning about history should be an immersive and enjoyable experience. That's why we've created a platform that combines educational content with beautifully crafted designs inspired by the rich artistic traditions of ancient Egypt.
@@ -39,8 +39,8 @@ const AboutUsPage: React.FC = () => {
             
             <div className="lg:w-1/2">
               <img 
-                src="https://images.pexels.com/photos/3631430/pexels-photo-3631430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                alt="Our team exploring Egyptian artifacts"
+                src="/images/egyptian-artifacts.jpg" 
+                alt="Collection of Ancient Egyptian artifacts including a golden mask, hieroglyphic tablets, and ceremonial items"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -108,11 +108,13 @@ const AboutUsPage: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                alt="Sarah Johnson"
-                className="w-full h-64 object-cover"
-              />
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/images/historian-at-temple.jpg" 
+                  alt="Sarah Johnson examining ancient hieroglyphics at an Egyptian temple"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-egyptian-blue-900 mb-1">Sarah Johnson</h3>
                 <p className="text-egyptian-blue-600 mb-3">Founder & Historian</p>
@@ -123,11 +125,13 @@ const AboutUsPage: React.FC = () => {
             </div>
             
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                alt="David Chen"
-                className="w-full h-64 object-cover"
-              />
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/images/artist-with-papyrus.jpg" 
+                  alt="David Chen working on Egyptian-inspired artistic designs"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-egyptian-blue-900 mb-1">David Chen</h3>
                 <p className="text-egyptian-blue-600 mb-3">Creative Director</p>
@@ -138,11 +142,13 @@ const AboutUsPage: React.FC = () => {
             </div>
             
             <div className="bg-white rounded-xl overflow-hidden shadow-md">
-              <img 
-                src="https://images.pexels.com/photos/3793648/pexels-photo-3793648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                alt="Maya Patel"
-                className="w-full h-64 object-cover"
-              />
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/images/educator-with-students.jpg" 
+                  alt="Maya Patel leading an educational workshop about Egyptian artifacts"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-egyptian-blue-900 mb-1">Maya Patel</h3>
                 <p className="text-egyptian-blue-600 mb-3">Education Specialist</p>

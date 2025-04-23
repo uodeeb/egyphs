@@ -26,8 +26,14 @@ const ShopPage: React.FC = () => {
   return (
     <div className="pt-20">
       {/* Header Banner */}
-      <div className="bg-egyptian-blue-800 text-white">
-        <div className="container-custom py-16 text-center">
+      <div className="relative bg-egyptian-blue-800 text-white">
+        <div 
+          className="absolute inset-0 bg-center bg-cover opacity-20"
+          style={{ 
+            backgroundImage: "url('/images/banners/marketplace-banner.png')" 
+          }}
+        ></div>
+        <div className="relative z-10 container-custom py-16 text-center">
           <h1 className="mb-4">Shop Our Egyptian-Inspired Products</h1>
           <p className="text-egyptian-sand-200 text-lg max-w-2xl mx-auto">
             Discover our unique collection of products featuring designs inspired by ancient Egyptian art and culture.

@@ -30,10 +30,10 @@ const ContactPage: React.FC = () => {
                     <h3 className="font-medium text-egyptian-blue-900 mb-1">Email Us</h3>
                     <p className="text-egyptian-blue-700">
                       <a 
-                        href="mailto:info@pyramidperspective.com" 
+                        href="mailto:info@egyphs.com" 
                         className="hover:text-egyptian-blue-600 transition-colors"
                       >
-                        info@pyramidperspective.com
+                        info@egyphs.com
                       </a>
                     </p>
                   </div>

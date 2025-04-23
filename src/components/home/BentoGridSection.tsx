@@ -64,7 +64,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="The Legacy of King Tutankhamun"
               description="Discover the fascinating story of the boy king, his mysterious death, and the extraordinary treasures found in his tomb."
-              image="https://images.pexels.com/photos/9801162/pexels-photo-9801162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy"
+              image="/public/images/articles/tutankhamun-treasures.png"
               link="/knowledge-hub/tutankhamun-legacy"
               linkText="Read Article"
               size="large"
@@ -78,7 +78,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="Egyptian Gods & Goddesses"
               description="Explore the pantheon of ancient Egyptian deities."
-              image="https://images.pexels.com/photos/9482125/pexels-photo-9482125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy"
+              image="/public/images/articles/egyptian-pantheon.png"
               link="/knowledge-hub/egyptian-gods"
               linkText="Explore"
               icon={<BookOpen className="w-7 h-7" />}
@@ -90,7 +90,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="Hieroglyphic Writing System"
               description="Learn about the ancient Egyptian writing system and its decipherment."
-              image="https://images.pexels.com/photos/6469840/pexels-photo-6469840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy"
+              image="/images/banners/hieroglyphs-wall.png"
               link="/knowledge-hub/hieroglyphics"
               linkText="Discover"
               icon={<Palette className="w-7 h-7" />}
@@ -102,7 +102,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="Pharaonic Art Collection"
               description="Beautiful designs inspired by ancient Egyptian art and symbolism."
-              image="https://images.pexels.com/photos/5733728/pexels-photo-5733728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy"
+              image="/public/images/custom/Design02.png"
               link="/discover-designs/pharaonic-art"
               linkText="View Collection"
               icon={<PaintBucket className="w-7 h-7" />}

@@ -40,7 +40,7 @@ const KnowledgeHubPage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-center bg-cover opacity-20"
           style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy')" 
+            backgroundImage: "url('/images/banners/hieroglyphs-wall.png')" 
           }}
         ></div>
         <div className="relative z-10 container-custom py-20 text-center">

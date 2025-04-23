@@ -7,7 +7,7 @@ export const articleData = [
     date: 'April 15, 2023',
     readTime: 8,
     excerpt: 'Discover the fascinating story of the boy king, his mysterious death, and the extraordinary treasures found in his tomb.',
-    image: 'https://images.pexels.com/photos/9801162/pexels-photo-9801162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/tutankhamun-treasures.png'
   },
   {
     id: '2',
@@ -17,7 +17,7 @@ export const articleData = [
     date: 'March 22, 2023',
     readTime: 12,
     excerpt: 'Explore the complex pantheon of ancient Egyptian deities and their roles in Egyptian religion and daily life.',
-    image: 'https://images.pexels.com/photos/8045968/pexels-photo-8045968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/egyptian-pantheon.png'
   },
   {
     id: '3',
@@ -27,7 +27,7 @@ export const articleData = [
     date: 'February 5, 2023',
     readTime: 10,
     excerpt: 'Uncover the mysteries behind the construction of the pyramids of Giza and the advanced engineering techniques used by ancient Egyptians.',
-    image: 'https://images.pexels.com/photos/3254729/pexels-photo-3254729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/pyramids-giza.jpg'
   },
   {
     id: '4',
@@ -37,7 +37,7 @@ export const articleData = [
     date: 'January 18, 2023',
     readTime: 7,
     excerpt: 'Learn about the sophisticated writing system of ancient Egypt and how the Rosetta Stone helped scholars unlock its secrets.',
-    image: 'https://images.pexels.com/photos/6469840/pexels-photo-6469840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/rosetta-stone.jpg'
   },
   {
     id: '5',
@@ -47,7 +47,7 @@ export const articleData = [
     date: 'December 7, 2022',
     readTime: 9,
     excerpt: 'Explore the intricate process of mummification and its cultural significance in ancient Egyptian beliefs about death and resurrection.',
-    image: 'https://images.pexels.com/photos/6469851/pexels-photo-6469851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/mummification.jpg'
   },
   {
     id: '6',
@@ -57,7 +57,7 @@ export const articleData = [
     date: 'November 12, 2022',
     readTime: 11,
     excerpt: 'Discover the truth behind the legend of Cleopatra VII, her political savvy, and her relationships with Julius Caesar and Mark Antony.',
-    image: 'https://images.pexels.com/photos/5967868/pexels-photo-5967868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/cleopatra-temple.jpg'
   },
   {
     id: '7',
@@ -67,7 +67,7 @@ export const articleData = [
     date: 'October 30, 2022',
     readTime: 8,
     excerpt: 'Learn about the collection of spells and instructions designed to help the deceased navigate the afterlife in ancient Egyptian belief.',
-    image: 'https://images.pexels.com/photos/3756220/pexels-photo-3756220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/book-of-dead.jpg'
   },
   {
     id: '8',
@@ -77,7 +77,7 @@ export const articleData = [
     date: 'September 18, 2022',
     readTime: 9,
     excerpt: 'Explore the massive temple complex dedicated to the god Amun-Ra and its significance in ancient Egyptian religious practice.',
-    image: 'https://images.pexels.com/photos/9007307/pexels-photo-9007307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/karnak-temple.jpg'
   },
   {
     id: '9',
@@ -87,6 +87,6 @@ export const articleData = [
     date: 'August 5, 2022',
     readTime: 6,
     excerpt: 'Discover the artistry and symbolism behind ancient Egyptian jewelry and its cultural significance beyond mere adornment.',
-    image: 'https://images.pexels.com/photos/6271110/pexels-photo-6271110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy'
+    image: '/images/articles/egyptian-jewelry.jpg'
   }
 ];

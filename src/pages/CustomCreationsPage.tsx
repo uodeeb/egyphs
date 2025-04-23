@@ -7,10 +7,10 @@ const CustomCreationsPage: React.FC = () => {
   const [step, setStep] = useState(1);
   
   const products = [
-    { id: 'tshirt', name: 'T-Shirt', image: 'https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy' },
-    { id: 'mug', name: 'Mug', image: 'https://images.pexels.com/photos/3643722/pexels-photo-3643722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy' },
-    { id: 'poster', name: 'Poster', image: 'https://images.pexels.com/photos/2747448/pexels-photo-2747448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy' },
-    { id: 'tote', name: 'Tote Bag', image: 'https://images.pexels.com/photos/5699134/pexels-photo-5699134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy' },
+    { id: 'tshirt', name: 'T-Shirt', image: '/images/custom/tshirt-blank.jpg' },
+    { id: 'mug', name: 'Mug', image: '/images/custom/mug-blank.jpg' },
+    { id: 'poster', name: 'Poster', image: '/images/custom/poster-blank.jpg' },
+    { id: 'tote', name: 'Tote Bag', image: '/images/custom/tote-blank.jpg' },
   ];
   
   const colors = [
@@ -41,7 +41,7 @@ const CustomCreationsPage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-center bg-cover opacity-20"
           style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/3714902/pexels-photo-3714902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy')" 
+            backgroundImage: "url('/images/banners/custom-creation-bg.png')" 
           }}
         ></div>
         <div className="relative z-10 container-custom py-20 text-center">
@@ -224,22 +224,22 @@ const CustomCreationsPage: React.FC = () => {
                         <div className="grid grid-cols-3 gap-3">
                           <div className="border border-egyptian-sand-300 rounded-md overflow-hidden cursor-pointer hover:border-egyptian-gold-500 transition-colors">
                             <img 
-                              src="https://images.pexels.com/photos/8045968/pexels-photo-8045968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                              alt="Ankh symbol"
+                              src="/images/templates/ankh-template.jpg" 
+                              alt="Ankh symbol template"
                               className="w-full aspect-square object-cover"
                             />
                           </div>
                           <div className="border border-egyptian-sand-300 rounded-md overflow-hidden cursor-pointer hover:border-egyptian-gold-500 transition-colors">
                             <img 
-                              src="https://images.pexels.com/photos/6469840/pexels-photo-6469840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                              alt="Hieroglyphics"
+                              src="/images/templates/hieroglyphs-template.jpg" 
+                              alt="Hieroglyphics template"
                               className="w-full aspect-square object-cover"
                             />
                           </div>
                           <div className="border border-egyptian-sand-300 rounded-md overflow-hidden cursor-pointer hover:border-egyptian-gold-500 transition-colors">
                             <img 
-                              src="https://images.pexels.com/photos/6469851/pexels-photo-6469851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy" 
-                              alt="Eye of Horus"
+                              src="/images/templates/horus-template.jpg" 
+                              alt="Eye of Horus template"
                               className="w-full aspect-square object-cover"
                             />
                           </div>

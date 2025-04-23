@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Ankh className="w-8 h-8 text-egyptian-gold-500" />
               <span className="text-xl font-serif font-bold text-egyptian-sand-50">
-                Pyramid Perspective
+                Egyphs
               </span>
             </Link>
             <p className="text-egyptian-sand-200 mb-4">
@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-egyptian-blue-800 text-center">
           <p className="text-egyptian-sand-300 text-sm">
-            &copy; {new Date().getFullYear()} Pyramid Perspective. All rights reserved.
+            &copy; {new Date().getFullYear()} Egyphs. All rights reserved.
           </p>
         </div>
       </div>

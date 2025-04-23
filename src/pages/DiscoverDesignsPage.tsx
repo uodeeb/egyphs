@@ -31,7 +31,7 @@ const DiscoverDesignsPage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-center bg-cover opacity-20"
           style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/6469851/pexels-photo-6469851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&crop=entropy')" 
+            backgroundImage: "url('/images/banners/egyptian-patterns.png')" 
           }}
         ></div>
         <div className="relative z-10 container-custom py-20 text-center">

@@ -32,10 +32,10 @@ const Navbar: React.FC = () => {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-egyptian-sand-50 shadow-md py-2' : 'bg-transparent py-4'
+        scrolled ? 'nav-scrolled shadow-lg' : 'nav-transparent'
       }`}
     >
-      <div className="container-custom">
+      <div className="container-custom py-4">
         <div className="flex justify-between items-center">
           <Link 
             to="/" 
@@ -43,22 +43,22 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
           >
             <div className={`transition-all duration-300 ${
-              scrolled ? 'w-32 h-12' : 'w-40 h-14'
+              scrolled ? 'w-48 h-16' : 'w-56 h-20'
             }`}>
               <img 
-                src="/egyphs-logo.jpg" 
+                src="/egyphs-logo.png" 
                 alt="Egyphs Logo" 
-                className="w-full h-full object-contain filter contrast-125"
+                className="w-full h-full object-contain brightness-0 invert"
               />
             </div>
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             <NavLink 
               to="/" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Home
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/knowledge-hub" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Knowledge Hub
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/discover-designs" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Discover Designs
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/shop" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Shop
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/custom-creations" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Custom Creations
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/about" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               About
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/contact" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
               }
             >
               Contact
@@ -119,80 +119,82 @@ const Navbar: React.FC = () => {
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-egyptian-blue-800" />
+              <X className="w-6 h-6 text-egyptian-sand-50" />
             ) : (
-              <Menu className="w-6 h-6 text-egyptian-blue-800" />
+              <Menu className="w-6 h-6 text-egyptian-sand-50" />
             )}
           </button>
         </div>
         
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pt-4 pb-4 border-t border-egyptian-blue-100">
-            <div className="flex flex-col space-y-4">
-              <NavLink 
-                to="/" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Home
-              </NavLink>
-              <NavLink 
-                to="/knowledge-hub" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Knowledge Hub
-              </NavLink>
-              <NavLink 
-                to="/discover-designs" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Discover Designs
-              </NavLink>
-              <NavLink 
-                to="/shop" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Shop
-              </NavLink>
-              <NavLink 
-                to="/custom-creations" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Custom Creations
-              </NavLink>
-              <NavLink 
-                to="/about" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                About
-              </NavLink>
-              <NavLink 
-                to="/contact" 
-                className={({ isActive }) => 
-                  isActive ? "navbar-link navbar-link-active" : "navbar-link"
-                }
-                onClick={closeMenu}
-              >
-                Contact
-              </NavLink>
+          <div className="md:hidden mt-4 pt-4 pb-4">
+            <div className="backdrop-blur-md bg-egyptian-blue-900/95 rounded-lg p-4 shadow-xl">
+              <div className="flex flex-col space-y-4">
+                <NavLink 
+                  to="/" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Home
+                </NavLink>
+                <NavLink 
+                  to="/knowledge-hub" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Knowledge Hub
+                </NavLink>
+                <NavLink 
+                  to="/discover-designs" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Discover Designs
+                </NavLink>
+                <NavLink 
+                  to="/shop" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Shop
+                </NavLink>
+                <NavLink 
+                  to="/custom-creations" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Custom Creations
+                </NavLink>
+                <NavLink 
+                  to="/about" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  About
+                </NavLink>
+                <NavLink 
+                  to="/contact" 
+                  className={({ isActive }) => 
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                  }
+                  onClick={closeMenu}
+                >
+                  Contact
+                </NavLink>
+              </div>
             </div>
           </div>
         )}

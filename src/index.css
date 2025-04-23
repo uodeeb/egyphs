@@ -42,7 +42,7 @@
   }
   
   .btn-primary {
-    @apply btn bg-egyptian-blue-800 text-white hover:bg-egyptian-blue-700 focus:ring-egyptian-blue-500;
+    @apply btn bg-egyptian-blue-800 text-egyptian-sand-50 hover:bg-egyptian-blue-700 focus:ring-egyptian-blue-500;
   }
   
   .btn-secondary {
@@ -50,7 +50,7 @@
   }
   
   .btn-outline {
-    @apply btn border-2 border-egyptian-blue-800 text-egyptian-blue-800 hover:bg-egyptian-blue-50 focus:ring-egyptian-blue-500;
+    @apply btn border-2 border-egyptian-sand-50 text-egyptian-sand-50 hover:bg-egyptian-blue-800/30 focus:ring-egyptian-gold-500;
   }
   
   .bento-grid {
@@ -79,11 +79,19 @@
   }
   
   .navbar-link {
-    @apply text-egyptian-blue-800 hover:text-egyptian-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300;
+    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300;
   }
   
   .navbar-link-active {
-    @apply text-egyptian-gold-500 font-bold;
+    @apply text-egyptian-gold-400 font-bold border-b-2 border-egyptian-gold-400;
+  }
+  
+  .nav-scrolled {
+    @apply bg-egyptian-blue-900/95 backdrop-blur-sm;
+  }
+  
+  .nav-transparent {
+    @apply bg-gradient-to-b from-egyptian-blue-900/80 to-transparent;
   }
   
   .hieroglyphic-border {
