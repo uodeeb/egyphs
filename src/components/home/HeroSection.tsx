@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
           
           <div className="lg:w-1/2 flex justify-center">
             <img 
-              src="/public/images/custom/banner01.png"
+              src="/images/custom/banner01.png"
               alt="Ancient Egyptian Hieroglyphics on Temple Wall" 
               className="rounded-lg shadow-2xl max-w-full h-auto border-4 border-egyptian-gold-400/30"
               style={{ maxHeight: '70vh' }}
