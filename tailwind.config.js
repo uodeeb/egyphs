@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'egyptian-blue': {
+          50: '#f0f4fa',
+          100: '#dde6f3',
+          200: '#c2d1e9',
+          300: '#9ab3da',
+          400: '#6c8cc7',
+          500: '#4e6cb1',
+          600: '#3e5395',
+          700: '#344279',
+          800: '#2f3a66',
+          900: '#1A2E4C',
+        },
+        'egyptian-gold': {
+          50: '#fbf8e9',
+          100: '#f7f0c7',
+          200: '#f0e19a',
+          300: '#e7ce64',
+          400: '#e0bd3c',
+          500: '#D4AF37',
+          600: '#ba8c29',
+          700: '#996823',
+          800: '#7d5324',
+          900: '#684521',
+        },
+        'egyptian-terracotta': {
+          50: '#fdf5f1',
+          100: '#fae8df',
+          200: '#f4d0bd',
+          300: '#eab294',
+          400: '#dd8c69',
+          500: '#C2703D',
+          600: '#b95331',
+          700: '#9a4029',
+          800: '#7e3627',
+          900: '#682f24',
+        },
+        'egyptian-sand': {
+          50: '#fcfaf5',
+          100: '#f8f4e8',
+          200: '#f1e7d2',
+          300: '#e6d4af',
+          400: '#d8b987',
+          500: '#c9a168',
+          600: '#bb8a51',
+          700: '#a07044',
+          800: '#825a3c',
+          900: '#6b4a35',
+        },
+      },
+      fontFamily: {
+        sans: ['Noto Sans', 'sans-serif'],
+        serif: ['Noto Serif', 'serif'],
+      },
+      backgroundImage: {
+        'papyrus-texture': "url('https://images.pexels.com/photos/7232800/pexels-photo-7232800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
+      },
+    },
+  },
+  plugins: [],
+};

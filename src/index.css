@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-egyptian-blue-900 bg-egyptian-sand-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply btn bg-egyptian-blue-800 text-white hover:bg-egyptian-blue-700 focus:ring-egyptian-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-egyptian-gold-500 text-egyptian-blue-900 hover:bg-egyptian-gold-400 focus:ring-egyptian-gold-300;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-egyptian-blue-800 text-egyptian-blue-800 hover:bg-egyptian-blue-50 focus:ring-egyptian-blue-500;
+  }
+  
+  .bento-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6;
+  }
+  
+  .bento-item {
+    @apply rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .bento-item-large {
+    @apply md:col-span-2 md:row-span-2;
+  }
+  
+  .bento-item-content {
+    @apply p-6 h-full flex flex-col;
+  }
+  
+  .section-heading {
+    @apply mb-12 text-center relative;
+  }
+  
+  .section-heading::after {
+    content: "";
+    @apply block w-24 h-1 bg-egyptian-gold-500 mx-auto mt-4;
+  }
+  
+  .navbar-link {
+    @apply text-egyptian-blue-800 hover:text-egyptian-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300;
+  }
+  
+  .navbar-link-active {
+    @apply text-egyptian-gold-500 font-bold;
+  }
+  
+  .hieroglyphic-border {
+    @apply relative;
+  }
+  
+  .hieroglyphic-border::before {
+    content: "";
+    @apply absolute left-0 top-0 w-full h-2 bg-gradient-to-r from-egyptian-gold-400 via-egyptian-gold-500 to-egyptian-gold-400;
+  }
+}
