@@ -25,7 +25,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "*.ts"],
+  "include": ["src", "*.ts", "ai-image/download-images.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "ts-node": {
     "transpileOnly": true,
