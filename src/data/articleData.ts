@@ -1,4 +1,3 @@
-
 /*----------------------------------new revised------------*/
 // articleData.ts
 
@@ -52,9 +51,9 @@ export const articleData: Article[] = [
     readTime: 12,
     excerpt: 'Explore the vast Egyptian pantheon beyond the famous names. Understand key deities, their relationships via creation myths, and their impact on ancient Egypt.',
     mainImage: {
-      url: '/images/articles/egyptian-pantheon-overview.jpg',
-      alt: 'Stylized depiction of major Egyptian gods like Ra, Osiris, Isis, Horus, and Anubis.',
-      caption: 'The Egyptian pantheon was a complex web of deities governing all aspects of life and death.'
+      url: '/images/articles00/egyptian-pantheon.png',
+      alt: 'Artistic depiction of major Egyptian deities including Ra, Osiris, Isis, and Anubis',
+      caption: 'The Egyptian pantheon encompassed a complex hierarchy of deities governing all aspects of life.'
     },
     sections: [
       {
@@ -154,9 +153,9 @@ export const articleData: Article[] = [
     readTime: 15,
     excerpt: 'Unlock the secrets of the "Book of Coming Forth by Day." Learn about its purpose, key spells like the Weighing of the Heart, and the perilous journey to the Egyptian afterlife.',
     mainImage: {
-      url: '/images/articles/book-of-dead-papyrus-hunefer.jpg',
-      alt: 'Detailed vignette from the Book of the Dead papyrus of Hunefer showing the Weighing of the Heart.',
-      caption: 'The Book of the Dead provided essential spells and knowledge for navigating the afterlife.'
+      url: '/images/articles/weighing-heart-anubis-thoth.jpg',
+      alt: 'Scene from the Book of the Dead showing the Weighing of the Heart ceremony',
+      caption: 'The Book of the Dead provided essential guidance for navigating the afterlife.'
     },
     sections: [
       {
@@ -246,9 +245,9 @@ export const articleData: Article[] = [
     readTime: 14,
     excerpt: 'Delve into the intricate 70-day mummification process. Understand the practical steps and sacred rituals Egyptians used to preserve bodies for eternity.',
     mainImage: {
-      url: '/images/articles/mummification-anubis-scene.jpg',
-      alt: 'Painting showing Anubis tending to a mummy on a funerary bier.',
-      caption: 'Mummification was a sacred process overseen by priests, often representing the god Anubis.'
+      url: '/images/articles00/mummification.jpg',
+      alt: 'Ancient Egyptian mummification scene showing priests preparing a body',
+      caption: 'The mummification process combined practical preservation with sacred ritual.'
     },
     sections: [
       {
@@ -377,9 +376,9 @@ export const articleData: Article[] = [
     readTime: 12,
     excerpt: 'Explore the dramatic Weighing of the Heart ceremony, the Egyptian concept of Ma\'at, and why eternal oblivion, not hellfire, was the ultimate punishment.',
     mainImage: {
-      url: '/images/articles/weighing-heart-hunefer-main.jpg',
-      alt: 'The Weighing of the Heart ceremony from the Book of the Dead of Hunefer.',
-      caption: 'The judgment scene was a pivotal moment determining the soul\'s eternal fate.'
+      url: '/images/articles00/weighing-ceremony.jpg',
+      alt: 'Detailed scene of Anubis weighing the heart against the feather of Ma\'at',
+      caption: 'The Weighing of the Heart ceremony determined the soul\'s fate in the afterlife.'
     },
     sections: [
       {
@@ -603,9 +602,9 @@ export const articleData: Article[] = [
     readTime: 16,
     excerpt: 'Comparing the reigns and legacies of three legendary pharaohs: Hatshepsut, Thutmose III, and Ramses II. Who truly deserves the title "Greatest"?',
     mainImage: {
-      url: '/images/articles/greatest-pharaohs-montage.jpg',
-      alt: 'Montage showing iconic representations of Hatshepsut, Thutmose III, and Ramses II.',
-      caption: 'Defining "greatness" requires comparing the diverse achievements of Egypt\'s most powerful rulers.'
+      url: '/images/articles/thutmose-iii-smiting-enemies-relief.jpg',
+      alt: 'Relief showing Thutmose III in the classic smiting pose',
+      caption: 'The great pharaohs of Egypt left lasting legacies through military conquests and monumental building projects.'
     },
     sections: [
       {
@@ -692,9 +691,9 @@ export const articleData: Article[] = [
     readTime: 14,
     excerpt: 'Separate myth from reality surrounding the "Curse of the Pharaohs." Discover the true significance of Tutankhamun\'s tomb and the boy king himself.',
     mainImage: {
-      url: '/images/articles/tutankhamun-gold-mask-closeup.jpg',
-      alt: 'Close-up of the stunning golden death mask of Tutankhamun.',
-      caption: 'Tutankhamun\'s tomb yielded treasures, but his true legacy lies beyond the mythical curse.'
+      url: '/images/articles/tutankhamun-tomb-nested-shrines.jpg',
+      alt: 'The nested golden shrines in Tutankhamun\'s tomb',
+      caption: 'The discovery of Tutankhamun\'s tomb revolutionized our understanding of royal Egyptian burials.'
     },
     sections: [
       {
@@ -794,9 +793,9 @@ export const articleData: Article[] = [
     readTime: 15,
     excerpt: 'Delve into the reign of Akhenaten, the pharaoh who replaced Egypt\'s pantheon with the single god Aten, moved the capital, and revolutionized art. Was he a madman or a genius?',
     mainImage: {
-      url: '/images/articles/akhenaten-nefertiti-aten-relief.jpg',
-      alt: 'Amarna relief showing Akhenaten, Nefertiti, and daughters worshipping the Aten sun disk.',
-      caption: 'Akhenaten\'s reign brought radical changes to Egyptian religion, art, and society.'
+      url: '/images/articles/akhenaten-defaced-cartouche.jpg',
+      alt: 'Defaced cartouche of Akhenaten showing historical attempts to erase his memory',
+      caption: 'Akhenaten\'s religious revolution and its aftermath deeply impacted Egyptian society.'
     },
     sections: [
       {
@@ -896,9 +895,9 @@ export const articleData: Article[] = [
     readTime: 16,
     excerpt: 'Go beyond the myths of Cleopatra VII. Discover the intelligent, multilingual politician who skillfully navigated alliances with Caesar and Antony to protect Egypt from Rome.',
     mainImage: {
-      url: '/images/articles/cleopatra-dendera-relief.jpg',
-      alt: 'Relief carving from Dendera Temple depicting Cleopatra VII and her son Caesarion in Egyptian style.',
-      caption: 'Cleopatra skillfully blended Egyptian tradition with Hellenistic rule and Roman politics.'
+      url: '/images/articles/cleopatra-coin-portrait.jpg',
+      alt: 'Ancient coin bearing the portrait of Cleopatra VII',
+      caption: 'Contemporary depiction of Cleopatra VII on a coin from her reign.'
     },
     sections: [
       {
@@ -1722,9 +1721,9 @@ export const articleData: Article[] = [
     readTime: 17,
     excerpt: 'Explore the monumental task of building the Great Pyramid of Giza. Discover theories on quarrying, transporting massive blocks, ramp systems, and the workforce involved.',
     mainImage: {
-      url: '/images/articles/great-pyramid-giza-sunset.jpg',
-      alt: 'The Great Pyramid of Giza standing against a sunset sky.',
-      caption: 'The Great Pyramid remains a testament to ancient Egyptian engineering prowess.'
+      url: '/images/articles00/great-pyramid-construction.jpg',
+      alt: 'The Great Pyramid of Giza with construction techniques illustrated',
+      caption: 'The Great Pyramid remains one of humanity\'s most impressive architectural achievements.'
     },
     sections: [
       {
@@ -1857,9 +1856,9 @@ export const articleData: Article[] = [
     readTime: 16,
     excerpt: 'Journey through the vast Karnak Temple complex in Luxor, the heart of ancient Egyptian religion for centuries. Explore its pylons, hypostyle hall, obelisks, and sacred lake.',
     mainImage: {
-      url: '/images/articles/karnak-hypostyle-hall-overview.jpg',
-      alt: 'Wide view inside the Great Hypostyle Hall at Karnak Temple showing the forest of massive columns.',
-      caption: 'Karnak Temple, built over 2,000 years, remains the largest religious complex ever constructed.'
+      url: '/images/articles/edfu-temple-pylon-court.jpg',
+      alt: 'The massive pylon gateway and courtyard of Edfu Temple',
+      caption: 'Egyptian temples like Karnak were built and expanded over centuries.'
     },
     sections: [
       {
@@ -1981,9 +1980,9 @@ export const articleData: Article[] = [
     readTime: 15,
     excerpt: 'Explore the Valley of the Kings, the hidden burial ground of New Kingdom pharaohs. Discover why they chose this desolate valley, the stunning tombs within, and the secrets they hold.',
     mainImage: {
-      url: '/images/articles/valley-of-the-kings-panorama.jpg',
-      alt: 'Panoramic view of the desolate, rocky landscape of the Valley of the Kings near Luxor.',
-      caption: 'The Valley of the Kings served as the royal necropolis for Egypt\'s New Kingdom pharaohs.'
+      url: '/images/articles/valley-of-the-kings-tomb-entrances.jpg',
+      alt: 'Rock-cut entrances to royal tombs in the Valley of the Kings',
+      caption: 'The Valley of the Kings contains dozens of elaborately decorated royal tombs.'
     },
     sections: [
       {
@@ -2224,9 +2223,9 @@ export const articleData: Article[] = [
     readTime: 12,
     excerpt: 'Discover the story behind Egypt\'s towering obelisks. Explore their solar symbolism, the incredible engineering required to quarry, transport, and erect these monoliths.',
     mainImage: {
-      url: '/images/articles/karnak-obelisks-pair.jpg',
-      alt: 'Two large granite obelisks standing within the Karnak Temple complex.',
-      caption: 'Obelisks, towering monolithic monuments, were potent symbols of the sun god and pharaonic power.'
+      url: '/images/articles/aswan-quarry-unfinished-obelisk.jpg',
+      alt: 'The Unfinished Obelisk still attached to the bedrock at Aswan',
+      caption: 'The Unfinished Obelisk reveals ancient Egyptian engineering capabilities.'
     },
     sections: [
       {

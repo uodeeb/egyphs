@@ -79,19 +79,19 @@
   }
   
   .navbar-link {
-    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300;
+    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 text-egyptian-sand-50 hover:text-egyptian-gold-400;
   }
   
   .navbar-link-active {
-    @apply text-[#f5951c] font-bold border-b-2 border-[#f5951c];
+    @apply text-egyptian-gold-400 font-bold border-b-2 border-egyptian-gold-400;
   }
   
   .nav-scrolled {
-    @apply bg-[#0f445d] backdrop-blur-sm;
+    @apply bg-egyptian-blue-900 backdrop-blur-sm;
   }
   
   .nav-transparent {
-    @apply bg-gradient-to-b from-[#0f445d]/70 to-[#1a1a1a]/90;
+    @apply bg-gradient-to-b from-egyptian-blue-900/70 to-egyptian-blue-800/90;
   }
   
   .hieroglyphic-border {
