@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Search, Filter, Clock } from 'lucide-react';
+import { Search, Filter, Clock, User } from 'lucide-react';
 import { articleData } from '../data/articleData';
+import type { ArticleCategory } from '../types/article';
 
 const KnowledgeHubPage: React.FC = () => {
   const [searchParams] = useSearchParams();
-  const categoryParam = searchParams.get('category');
+  const categoryParam = searchParams.get('category') as ArticleCategory | null;
   
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState(categoryParam || 'all');
+  const [activeCategory, setActiveCategory] = useState<ArticleCategory | 'all'>(categoryParam || 'all');
   
   useEffect(() => {
     if (categoryParam) {
@@ -18,16 +19,18 @@ const KnowledgeHubPage: React.FC = () => {
   
   const categories = [
     { id: 'all', name: 'All Categories' },
-    { id: 'mythology', name: 'Mythology' },
-    { id: 'architecture', name: 'Architecture' },
-    { id: 'art', name: 'Art & Symbols' },
-    { id: 'daily-life', name: 'Daily Life' },
+    { id: 'gods-myths-afterlife', name: 'Gods, Myths & Afterlife' },
     { id: 'pharaohs', name: 'Pharaohs' },
+    { id: 'everyday-life', name: 'Everyday Life' },
+    { id: 'engineering-marvels', name: 'Engineering Marvels' },
+    { id: 'hieroglyphs-art-innovation', name: 'Hieroglyphs, Art & Innovation' },
   ];
   
   const filteredArticles = articleData.filter(article => {
-    const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                           article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = 
+      article.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      article.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      article.author.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = activeCategory === 'all' || article.category === activeCategory;
     
     return matchesSearch && matchesCategory;
@@ -61,7 +64,7 @@ const KnowledgeHubPage: React.FC = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search articles..."
+                placeholder="Search articles by title, content, or author..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10 pr-4 py-2 w-full rounded-md border border-egyptian-sand-300 focus:outline-none focus:ring-2 focus:ring-egyptian-blue-500"
@@ -73,7 +76,7 @@ const KnowledgeHubPage: React.FC = () => {
               {categories.map(category => (
                 <button
                   key={category.id}
-                  onClick={() => setActiveCategory(category.id)}
+                  onClick={() => setActiveCategory(category.id as ArticleCategory | 'all')}
                   className={`px-4 py-2 rounded-full text-sm whitespace-nowrap ${
                     activeCategory === category.id 
                       ? 'bg-egyptian-blue-800 text-white' 
@@ -107,8 +110,8 @@ const KnowledgeHubPage: React.FC = () => {
                   <article className="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
                       <img 
-                        src={article.image} 
-                        alt={article.title}
+                        src={article.mainImage.url}
+                        alt={article.mainImage.alt}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute top-0 right-0 bg-egyptian-blue-800 text-white text-xs font-medium px-3 py-1">
@@ -122,9 +125,15 @@ const KnowledgeHubPage: React.FC = () => {
                       <p className="text-egyptian-blue-700 mb-4 flex-1">
                         {article.excerpt}
                       </p>
-                      <div className="flex items-center text-egyptian-blue-500 text-sm">
-                        <Clock className="w-4 h-4 mr-1" />
-                        <span>{article.readTime} min read</span>
+                      <div className="flex items-center justify-between text-egyptian-blue-500 text-sm">
+                        <div className="flex items-center">
+                          <Clock className="w-4 h-4 mr-1" />
+                          <span>{article.readTime} min read</span>
+                        </div>
+                        <div className="flex items-center">
+                          <User className="w-4 h-4 mr-1" />
+                          <span>{article.author.name}</span>
+                        </div>
                       </div>
                     </div>
                   </article>

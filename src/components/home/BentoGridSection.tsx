@@ -64,7 +64,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="The Legacy of King Tutankhamun"
               description="Discover the fascinating story of the boy king, his mysterious death, and the extraordinary treasures found in his tomb."
-              image="/images/articles/tutankhamun-treasures.png"
+              image="/images/articles00/tutankhamun-treasures.png"
               link="/knowledge-hub/tutankhamun-legacy"
               linkText="Read Article"
               size="large"
@@ -78,7 +78,7 @@ const BentoGridSection: React.FC = () => {
             <BentoItem
               title="Egyptian Gods & Goddesses"
               description="Explore the pantheon of ancient Egyptian deities."
-              image="/images/articles/egyptian-pantheon.png"
+              image="/images/articles00/egyptian-pantheon.png"
               link="/knowledge-hub/egyptian-gods"
               linkText="Explore"
               icon={<BookOpen className="w-7 h-7" />}

@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import KnowledgeHubPage from './pages/KnowledgeHubPage';
+import ArticleCategoriesPage from './pages/ArticleCategoriesPage';
 import DiscoverDesignsPage from './pages/DiscoverDesignsPage';
 import ShopPage from './pages/ShopPage';
 import CustomCreationsPage from './pages/CustomCreationsPage';
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
+          <Route path="/knowledge-hub/categories" element={<ArticleCategoriesPage />} />
           <Route path="/knowledge-hub/:slug" element={<ArticlePage />} />
           <Route path="/discover-designs" element={<DiscoverDesignsPage />} />
           <Route path="/shop" element={<ShopPage />} />

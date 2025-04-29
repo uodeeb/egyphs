@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import type { ArticleCategory } from '../../types/article';
 
 interface CategoryCardProps {
   title: string;
@@ -29,6 +30,44 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, image, link, count }
 };
 
 const FeaturedCategories: React.FC = () => {
+  const categories: Array<{
+    id: ArticleCategory;
+    title: string;
+    image: string;
+    count: number;
+  }> = [
+    {
+      id: 'gods-myths-afterlife',
+      title: 'Gods, Myths & Afterlife',
+      image: '/images/articles00/egyptian-pantheon.png',
+      count: 12
+    },
+    {
+      id: 'pharaohs',
+      title: 'Pharaohs',
+      image: '/images/articles00/tutankhamun-treasures.png',
+      count: 8
+    },
+    {
+      id: 'everyday-life',
+      title: 'Everyday Life',
+      image: '/images/articles00/mummification.jpg',
+      count: 7
+    },
+    {
+      id: 'engineering-marvels',
+      title: 'Engineering Marvels',
+      image: '/images/articles00/pyramids-giza.jpg',
+      count: 9
+    },
+    {
+      id: 'hieroglyphs-art-innovation',
+      title: 'Hieroglyphs & Art',
+      image: '/images/articles00/rosetta-stone.jpg',
+      count: 10
+    }
+  ];
+
   return (
     <section className="py-20 bg-egyptian-sand-100">
       <div className="container-custom">
@@ -37,40 +76,15 @@ const FeaturedCategories: React.FC = () => {
         </h2>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          <CategoryCard 
-            title="Mythology"
-            image="/images/egyptian-gods.jpg"
-            link="/knowledge-hub?category=mythology"
-            count={12}
-          />
-          
-          <CategoryCard 
-            title="Architecture"
-            image="/images/great-pyramids.jpg"
-            link="/knowledge-hub?category=architecture"
-            count={8}
-          />
-          
-          <CategoryCard 
-            title="Art & Symbols"
-            image="/images/wall-paintings.jpg"
-            link="/knowledge-hub?category=art"
-            count={15}
-          />
-          
-          <CategoryCard 
-            title="Daily Life"
-            image="/images/ancient-life.jpg"
-            link="/knowledge-hub?category=daily-life"
-            count={7}
-          />
-          
-          <CategoryCard 
-            title="Pharaohs"
-            image="/images/ramesses-statue.jpg"
-            link="/knowledge-hub?category=pharaohs"
-            count={9}
-          />
+          {categories.map(category => (
+            <CategoryCard 
+              key={category.id}
+              title={category.title}
+              image={category.image}
+              link={`/knowledge-hub?category=${category.id}`}
+              count={category.count}
+            />
+          ))}
         </div>
       </div>
     </section>

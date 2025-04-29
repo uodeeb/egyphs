@@ -43,12 +43,12 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
           >
             <div className={`transition-all duration-300 ${
-              scrolled ? 'w-48 h-16' : 'w-56 h-20'
+              scrolled ? 'w-30 h-12' : 'w-40 h-16'
             }`}>
               <img 
-                src="/egyphs-logo.png" 
+                src="/new-egyphs-logo01.png" 
                 alt="Egyphs Logo" 
-                className="w-full h-full object-contain brightness-0 invert"
+                className="w-full h-full object-contain"
               />
             </div>
           </Link>
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Home
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/knowledge-hub" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Knowledge Hub
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/discover-designs" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Discover Designs
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/shop" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Shop
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/custom-creations" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Custom Creations
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/about" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               About
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               to="/contact" 
               className={({ isActive }) => 
-                isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
               }
             >
               Contact
@@ -119,9 +119,9 @@ const Navbar: React.FC = () => {
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-egyptian-sand-50" />
+              <X className="w-6 h-6 text-[#f5951c]" />
             ) : (
-              <Menu className="w-6 h-6 text-egyptian-sand-50" />
+              <Menu className="w-6 h-6 text-[#f5951c]" />
             )}
           </button>
         </div>
@@ -129,12 +129,12 @@ const Navbar: React.FC = () => {
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 pt-4 pb-4">
-            <div className="backdrop-blur-md bg-egyptian-blue-900/95 rounded-lg p-4 shadow-xl">
+            <div className="backdrop-blur-md bg-[#1a1a1a]/95 rounded-lg p-4 shadow-xl">
               <div className="flex flex-col space-y-4">
                 <NavLink 
                   to="/" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/knowledge-hub" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/discover-designs" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/shop" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -170,7 +170,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/custom-creations" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -179,7 +179,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/about" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >
@@ -188,7 +188,7 @@ const Navbar: React.FC = () => {
                 <NavLink 
                   to="/contact" 
                   className={({ isActive }) => 
-                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-egyptian-sand-50 hover:text-egyptian-gold-400"
+                    isActive ? "navbar-link navbar-link-active" : "navbar-link text-[#f5951c] hover:text-[#f5951c]/80"
                   }
                   onClick={closeMenu}
                 >

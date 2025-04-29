@@ -83,15 +83,15 @@
   }
   
   .navbar-link-active {
-    @apply text-egyptian-gold-400 font-bold border-b-2 border-egyptian-gold-400;
+    @apply text-[#f5951c] font-bold border-b-2 border-[#f5951c];
   }
   
   .nav-scrolled {
-    @apply bg-egyptian-blue-900/95 backdrop-blur-sm;
+    @apply bg-[#0f445d] backdrop-blur-sm;
   }
   
   .nav-transparent {
-    @apply bg-gradient-to-b from-egyptian-blue-900/80 to-transparent;
+    @apply bg-gradient-to-b from-[#0f445d]/70 to-[#1a1a1a]/90;
   }
   
   .hieroglyphic-border {
