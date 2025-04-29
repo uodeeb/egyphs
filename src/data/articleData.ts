@@ -1106,9 +1106,9 @@ export const articleData: Article[] = [
     readTime: 15,
     excerpt: 'Step back 3,500 years. Explore the daily routines, work, family life, and leisure activities of farmers, craftsmen, scribes, and nobles in ancient Egypt.',
     mainImage: {
-      url: '/images/articles/egyptian-daily-life-tomb-scene.jpg',
-      alt: 'Tomb painting depicting various scenes of ancient Egyptian daily life: farming, crafting, boating.',
-      caption: 'Daily life in ancient Egypt revolved around the Nile, agriculture, craftsmanship, and family.'
+      url: '/images/articles/egyptian-musicians-dancers-relief.jpg',
+      alt: 'Relief showing musicians and dancers in ancient Egypt',
+      caption: 'Daily life in ancient Egypt was rich with music, dance, and social activities.'
     },
     sections: [
       {
@@ -1149,8 +1149,8 @@ export const articleData: Article[] = [
         images: [
           {
             url: '/images/articles/egyptian-seated-scribe-statue.jpg',
-            alt: 'Famous statue of a seated Egyptian scribe holding a papyrus roll, ready to write.',
-            caption: 'Scribes were the literate administrators essential for managing the Egyptian state.'
+            alt: 'Statue showing an Egyptian scribe at work',
+            caption: 'Egyptian society allowed various roles and rights for women, unusual for ancient civilizations.'
           },
            {
             url: '/images/articles/hieratic-script-ostracon.jpg',
@@ -1202,8 +1202,8 @@ export const articleData: Article[] = [
           },
            {
             url: '/images/articles/egyptian-musicians-dancers-relief.jpg',
-            alt: 'Relief or painting depicting Egyptian musicians playing instruments and dancers performing.',
-            caption: 'Music and dance played important roles in both celebrations and religious life.'
+            alt: 'Relief showing Egyptian musicians and dancers performing',
+            caption: 'Music, dance, and games were important aspects of Egyptian leisure.'
           }
         ]
       },
@@ -1235,9 +1235,9 @@ export const articleData: Article[] = [
     readTime: 13,
     excerpt: 'Discover what the ancient Egyptians truly ate. Explore the vital roles of bread and beer, the variety of produce from the Nile, and the differences between peasant and elite diets.',
     mainImage: {
-      url: '/images/articles/egyptian-food-offering-table.jpg',
-      alt: 'Ancient Egyptian offering table laden with depictions of bread, beer, fowl, fruits, and vegetables.',
-      caption: 'The ancient Egyptian diet, rich in grains, vegetables, and fish, was shaped by the Nile.'
+      url: '/images/articles/cattle-herding-egyptian-relief.jpg',
+      alt: 'Relief showing cattle herding and food production',
+      caption: 'Agriculture and animal husbandry were central to Egyptian diet and economy.'
     },
     sections: [
       {
@@ -1288,8 +1288,8 @@ export const articleData: Article[] = [
           },
           {
             url: '/images/articles/cattle-herding-egyptian-relief.jpg',
-            alt: 'Relief showing Egyptians herding cattle, a valuable resource primarily for the elite.',
-            caption: 'Cattle were important but beef consumption was less common than fish or fowl.'
+            alt: 'Relief showing cattle herding and food production',
+            caption: 'Agriculture and animal husbandry were central to Egyptian diet and economy.'
           }
         ]
       },
@@ -1354,9 +1354,9 @@ export const articleData: Article[] = [
     readTime: 14,
     excerpt: 'Challenge common assumptions about the ancient world. Explore the remarkable legal rights, economic independence, and diverse roles held by women in ancient Egypt.',
     mainImage: {
-      url: '/images/articles/egyptian-women-independent-figures.jpg',
-      alt: 'Egyptian art depicting women engaged in various activities, showcasing their active roles.',
-      caption: 'Contrary to many ancient societies, Egyptian women enjoyed significant legal and social autonomy.'
+      url: '/images/articles/egyptian-seated-scribe-statue.jpg',
+      alt: 'Statue showing an Egyptian scribe at work',
+      caption: 'Egyptian society allowed various roles and rights for women, unusual for ancient civilizations.'
     },
     sections: [
       {
@@ -1467,9 +1467,9 @@ export const articleData: Article[] = [
     readTime: 12,
     excerpt: 'Step inside the homes of ancient Egyptians. Explore the ubiquitous mudbrick construction, the layouts of commoner and noble houses, and furnishings adapted to the Nile climate.',
     mainImage: {
-      url: '/images/articles/egyptian-house-reconstruction-complex.jpg',
-      alt: 'Detailed reconstruction drawing of an ancient Egyptian noble villa with gardens and outbuildings.',
-      caption: 'Egyptian homes ranged from simple mudbrick dwellings to elaborate villas, reflecting social status.'
+      url: '/images/articles/ancient-egyptian-mudbricks.jpg',
+      alt: 'Ancient Egyptian mudbrick construction and housing remains',
+      caption: 'Egyptian homes were built using mudbricks, perfectly adapted to the local climate.'
     },
     sections: [
       {
@@ -1483,8 +1483,8 @@ export const articleData: Article[] = [
         images: [
           {
             url: '/images/articles/ancient-egyptian-mudbricks.jpg',
-            alt: 'Photograph of preserved ancient Egyptian sun-dried mudbricks showing straw binder.',
-            caption: 'Sun-dried mudbrick, made from Nile silt and straw, was the primary building material.'
+            alt: 'Ancient Egyptian mudbrick construction and housing remains',
+            caption: 'Egyptian homes were built using mudbricks, perfectly adapted to the local climate.'
           },
           {
             url: '/images/articles/mudbrick-making-reconstruction.jpg',
@@ -1591,9 +1591,9 @@ export const articleData: Article[] = [
     readTime: 13,
     excerpt: 'Explore the lighter side of ancient Egypt! Discover the games they played (like Senet), the music they enjoyed, the festivals they celebrated, and how they found leisure and entertainment.',
     mainImage: {
-      url: '/images/articles/egyptian-leisure-activities-montage.jpg',
-      alt: 'Montage showing Egyptians playing Senet, musicians performing, and a festival procession.',
-      caption: 'Ancient Egyptians balanced work and religious duty with diverse forms of leisure and celebration.'
+      url: '/images/articles/egyptian-musicians-dancers-relief.jpg',
+      alt: 'Relief showing Egyptian musicians and dancers performing',
+      caption: 'Music, dance, and games were important aspects of Egyptian leisure.'
     },
     sections: [
       {
